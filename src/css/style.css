@@ -27,22 +27,18 @@ body {
           color: #333;
           font-size: 12px;
           width: 200px; }
-  body div#home-sec {
-    padding: 20px; }
-    body div#home-sec div#seleccionar-ruta {
-      background-color: #fff;
-      padding: 20px;
-      display: inline-block; }
-      body div#home-sec div#seleccionar-ruta select {
-        border: solid 1px #FFC471; }
-    body div#home-sec p button {
-      margin-top: 10px;
-      padding: 5px 49px;
-      background: #FFC471;
-      color: #fff;
-      border-style: none; }
-  body section#calculator * {
-    /*outline: 1px solid purple; */ }
+  body div#home-sec div#seleccionar-ruta {
+    background-color: #fff;
+    padding: 20px;
+    display: inline-block; }
+    body div#home-sec div#seleccionar-ruta select {
+      border: solid 1px #FFC471; }
+  body div#home-sec p button {
+    margin-top: 10px;
+    padding: 5px 54px;
+    background: #FFC471;
+    color: #fff;
+    border-style: none; }
   body section#calculator div#vehiculo {
     background-color: #fff;
     display: inline-block;

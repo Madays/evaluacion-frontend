@@ -13,7 +13,8 @@ function mostrarInfo(){
     });
 }
 
-function mostrarbtnBuscar(){  
+function mostrarbtnBuscar(){
+    
 }
 
 function precioRuta(){
@@ -25,6 +26,7 @@ function precioRuta(){
         camion: 6
     }
     $('#btn-buscar').click(function(){
+        $('#calculator').slideToggle("slow"); 
         var distancia = parseInt($('#origen').val()) + parseInt($('#destino').val());
         var precioMotocicleta = distancia/21*673;
         var precioAutomovil = distancia/12*673;
