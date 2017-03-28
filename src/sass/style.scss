@@ -2,20 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid purple;
+    /*outline: 1px solid purple;*/
 }
 @import "variables/variables";
 @import "mixin/mixin";
 body{
-    /*background-image: url(../img/img-docs/background.jpg);
+    background-image: url(../img/img-docs/background.jpg);
     background-size:cover;
     background-position: top center;
     background-repeat: no-repeat;    
     background-attachment:scroll; 
-    height: 100vh; */ 
-    background-color: purple;
+    height: 100vh; 
+    /*background-color: purple;*/
     div#nav-menu{  
-        padding: 20px 0;
+
         background-color: #fff;
         border-color: #fff;
         div#nav-logo{
@@ -30,7 +30,19 @@ body{
         div#seleccionar-ruta{
             background-color: #fff;
             padding: 20px;
-            display: inline-block;    
+            display: inline-block; 
+            select{
+                border: solid 1px #FFC471;
+            }            
+        }
+        p{
+            button{
+                margin-top: 10px;
+                padding: 5px 49px;
+                background: $segundo-color;
+                color: $blanco;
+                border-style: none;
+            }    
         }
     }
     
