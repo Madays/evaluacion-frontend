@@ -5,6 +5,7 @@ $(document).ready(function(){
     mostrarbtnBuscar();
     precioRuta();
     validadCantidadPasajeros();
+        
 });
 function mostrarInfo(){
     $('#box-icon').click(function(){
@@ -35,11 +36,16 @@ function precioRuta(){
         $('#precioCamion').text(precioCamion);
     });        
 }
-function validadCantidadPasajeros(){
-    var regex = /([0-9]+)/;//expresion de numeros del 1 al 9
-
-    var numPasajero=$('#cant-pasajeros').val();
-    if(numPasajero==)
+function validadCantidadPasajeros(){        
+    $('#cant-pasajeros').keyup(function(){
+        alert('5678');
+        var regex = /([0-9]+)/;//expresion de numeros del 1 al 9
+        var numPasajero=parseInt($('#cant-pasajeros').val());
+        if(numPasajero!==regex){
+            alert('df');
+        }   
+    });
+    
     
 }
 
