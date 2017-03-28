@@ -1,0 +1,17 @@
+@import "../variables/variables";
+/*------------DESKTOP-----*/
+@media screen and (min-width:992px) and (max-width:1199px){
+    body {        
+        div.hero-container{
+            /*-------Header-----*/
+            /*-----End--Header-----*/ 
+            /*--------Footer---------*/
+            p{
+                bottom: 0;
+                font-size: $standar-size*2;
+                right: -100px;
+            }
+            /*------End--Footer---------*/            
+        }
+    } 
+}

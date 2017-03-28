@@ -1,0 +1,17 @@
+@import "../variables/variables";
+/*------------CELULARES-----*/
+@media screen and (max-width:767px){
+    body {        
+        div.hero-container{
+            /*-------Header-----*/
+            /*-----End--Header-----*/ 
+            /*--------Footer---------*/
+            p{
+                bottom: 0;
+                font-size: $standar-size;
+                right: -100px;
+            }
+            /*------End--Footer---------*/            
+        }
+    }   
+} 
