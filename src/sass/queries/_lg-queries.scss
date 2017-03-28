@@ -1,17 +1,25 @@
 @import "../variables/variables";
 /*------------DESKTOP LARGE-----*/
 @media screen and (min-width:1200px){
-    body {        
-        div.hero-container{
-            /*-------Header-----*/
-            /*-----End--Header-----*/ 
-            /*--------Footer---------*/
-            p{
-                bottom: 0;
-                font-size: $standar-size*3;           
-                right: -100px;
+    body{
+
+        div#nav-menu{  
+            div#nav-logo{
+
             }
-            /*------End--Footer---------*/            
+            div#nav-info{
+                font-size: 2px;
+            }
         }
+        div#home-sec{
+            padding: 20px;
+            div#seleccionar-ruta{
+                background-color: #fff;
+                padding: 20px;
+                display: inline-block;    
+            }
+        }
+    
+       
     }    
 }

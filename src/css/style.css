@@ -2,20 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*outline: 1px solid purple;*/ }
+  outline: 1px solid purple; }
 
 body {
-  background-image: url(../img/img-docs/background.jpg);
-  background-size: cover;
+  /*background-image: url(../img/img-docs/background.jpg);
+  background-size:cover;
   background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 100vh; }
-  body .navbar-inverse {
+  background-repeat: no-repeat;    
+  background-attachment:scroll; 
+  height: 100vh; */
+  background-color: purple; }
+  body div#nav-menu {
+    padding: 20px 0;
     background-color: #fff;
     border-color: #fff; }
+    body div#nav-menu div#nav-info {
+      color: #FFC471; }
   body div#home-sec {
-    position: fixed;
-    top: 60px; }
+    padding: 20px; }
+    body div#home-sec div#seleccionar-ruta {
+      background-color: #fff;
+      padding: 20px;
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,33 +2,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*outline: 1px solid purple;*/
+    outline: 1px solid purple;
 }
 @import "variables/variables";
 @import "mixin/mixin";
 body{
-    background-image: url(../img/img-docs/background.jpg);
+    /*background-image: url(../img/img-docs/background.jpg);
     background-size:cover;
     background-position: top center;
     background-repeat: no-repeat;    
     background-attachment:scroll; 
-    height: 100vh; 
-    .navbar-inverse {
+    height: 100vh; */ 
+    background-color: purple;
+    div#nav-menu{  
+        padding: 20px 0;
         background-color: #fff;
         border-color: #fff;
-    } 
-    div#nav-meu{        
         div#nav-logo{
             
         }
         div#nav-info{
-            
+            color: #FFC471;                                  
         }
     }
     div#home-sec{
-        position: fixed;
-        top: 60px;
-        
+        padding: 20px;
+        div#seleccionar-ruta{
+            background-color: #fff;
+            padding: 20px;
+            display: inline-block;    
+        }
     }
     
        

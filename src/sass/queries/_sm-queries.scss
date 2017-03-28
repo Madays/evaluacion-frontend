@@ -1,20 +1,25 @@
 @import "../variables/variables";
 /*------------TABLET-----*/
 @media screen and (min-width:768px) and (max-width:991px){
-    body {        
-        div.hero-container{
-            /*-------Header-----*/
+    body{
 
-            /*-----End--Header-----*/ 
-            /*--------Footer---------*/
-                /*--------index---------*/
-                p{
-                    bottom: 0;
-                    font-size: $standar-size*2;
-                    right: -100px;
-                }
-                /*------End--index---------*/                       
-            /*------End--Footer---------*/            
+        div#nav-menu{  
+            div#nav-logo{
+
+            }
+            div#nav-info{
+                font-size: 2px;
+            }
         }
+        div#home-sec{
+            padding: 20px;
+            div#seleccionar-ruta{
+                background-color: #fff;
+                padding: 20px;
+                display: inline-block;    
+            }
+        }
+    
+       
     }  
 }
