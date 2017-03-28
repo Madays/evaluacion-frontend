@@ -16,7 +16,17 @@ body {
     background-color: #fff;
     border-color: #fff; }
     body div#nav-menu div#nav-info {
-      color: #FFC471; }
+      color: #FFC471;
+      cursor: pointer; }
+      body div#nav-menu div#nav-info #info {
+        position: absolute;
+        right: 0;
+        background-color: #fff;
+        text-align: center; }
+        body div#nav-menu div#nav-info #info p {
+          color: #333;
+          font-size: 12px;
+          width: 200px; }
   body div#home-sec {
     padding: 20px; }
     body div#home-sec div#seleccionar-ruta {

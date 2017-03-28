@@ -8,9 +8,14 @@ var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 
 
-gulp.task('script', function(cb){
+gulp.task('script-bootstrap', function(cb){
 	// tarea script
     return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+    .pipe(gulp.dest('./src/js'));        
+});
+
+gulp.task('script-jquery', function(){
+    return gulp.src('./node_modules/jquery/dist/jquery.min.js')
     .pipe(gulp.dest('./src/js'));
 });
 
@@ -26,4 +31,4 @@ gulp.task('images', function() {
 });
 
 
-gulp.task('default', ['images', 'style', 'script']);
+gulp.task('default', ['images', 'style', 'script-bootstrap','script-jquery']);

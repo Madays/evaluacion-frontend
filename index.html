@@ -24,8 +24,12 @@
 		        <div class="col-xs-6 text-right" id="nav-info">
                     <div id="box-icon">
                         <h2>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                        </h2>                            
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>                            
+                        </h2>                                                    
+                    </div>
+                    <div id="info" class="collapse">
+                                <h5>carrocomp!</h5>
+                                <p>La nueva forma de moverte en la ciudad. Con <b>carrocomp!</b> puedes compartir tu viaje con amigos y cobrar el costo aquitativamente.</p>
                     </div>		                
 		        </div>
             </div>	    
@@ -35,37 +39,17 @@
 		<div class="container">
             <div id="seleccionar-ruta">
                 <h4>ORIGEN</h4>
-                <select>
-                  <option value="volvo">Seleccione</option>
-                  <option value="saab">Arica</option>
-                  <option value="opel">Iquique</option>
-                  <option value="audi">Antofagasta</option>
-                  <option value="audi">Calama</option>
-                  <option value="audi">La Serena</option>
-                  <option value="audi">Valparaiso</option>
-                  <option value="audi">Santiago</option>
-                  <option value="audi">Rancagua</option>
-                  <option value="audi">Talca</option>
-                  <option value="audi">Concepción</option>
-                  <option value="audi">Temuco</option>
+                <select id="origen">
+                  <option value="0">Seleccione</option>                  
                 </select>
                 <h4>DESTINO</h4>
-                <select>
-                  <option value="volvo">Seleccione</option>
-                  <option value="saab">Arica</option>
-                  <option value="opel">Iquique</option>
-                  <option value="audi">Antofagasta</option>
-                  <option value="audi">Calama</option>
-                  <option value="audi">La Serena</option>
-                  <option value="audi">Valparaiso</option>
-                  <option value="audi">Santiago</option>
-                  <option value="audi">Rancagua</option>
-                  <option value="audi">Talca</option>
-                  <option value="audi">Concepción</option>
-                  <option value="audi">Temuco</option>
+                <select id="destino">
+                  <option value="0">Seleccione</option>                  
                 </select>                   
             </div>	      
-            <p><button class="hidden" id="btn-buscar">buscar</button></p>      	        
+            <p id="btn-buscar">
+                <button>buscar</button>
+            </p>      	        
 		</div>
 	</div><!--END HOME SECTION-->  
 	<section id="info"  >
@@ -74,12 +58,24 @@
 	</section><!--END ABOUT SECTION-->
 	<section id="calculator" >
 		<div class="container">
-		    
+            <h4>VEHÍCULO</h4>
+            <h6>seleccione</h6>
+		    <ul>
+		        <li>
+		            <imput type=""></imput>
+		            <img src="" alt="">
+		        </li>
+		        <li></li>
+		        <li></li>
+		        <li></li>
+		    </ul>    
 		</div>
 	</section><!--END PROJECT SECTION-->
 	<div id="footer">
 		2014 www.yourdomain.com | All Right Reserved  
 	</div><!-- END FOOTER SECTION -->
-	<script src="src/js/"></script>
+	<script src="src/js/jquery.min.js"></script>
+	<script src="src/js/main.js"></script>
+	<script src="src/js/ciudades.js"></script>
 </body>
 </html>

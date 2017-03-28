@@ -22,7 +22,18 @@ body{
             
         }
         div#nav-info{
-            color: #FFC471;                                  
+            color: #FFC471;                         cursor: pointer;
+            #info{
+                position: absolute;
+                right: 0;
+                background-color: $blanco;
+                text-align: center;
+                p{
+                    color: #333;
+                    font-size: 12px;
+                    width: 200px;
+                }
+            }
         }
     }
     div#home-sec{
