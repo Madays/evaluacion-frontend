@@ -3,7 +3,8 @@ $(document).ready(function(){
     mostrarbtnBuscar();
     dibujarOpcionesCiudad();
     mostrarbtnBuscar();
-    precioRuta()
+    precioRuta();
+    validadCantidadPasajeros();
 });
 function mostrarInfo(){
     $('#box-icon').click(function(){
@@ -32,7 +33,13 @@ function precioRuta(){
         $('#precioAutomovil').text(precioAutomovil);
         $('#precioMinivan').text(precioMinivan);
         $('#precioCamion').text(precioCamion);
-    });
-    
+    });        
+}
+function validadCantidadPasajeros(){
+    var regex = /([0-9]+)/;//expresion de numeros del 1 al 9
+
+    var numPasajero=$('#cant-pasajeros').val();
+    if(numPasajero==)
     
 }
+
