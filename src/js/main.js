@@ -24,8 +24,15 @@ function precioRuta(){
     }
     $('#btn-buscar').click(function(){
         var distancia = parseInt($('#origen').val()) + parseInt($('#destino').val());
-        console.log(distancia);
+        var precioMotocicleta = distancia/21*673;
+        var precioAutomovil = distancia/12*673;
+        var precioMinivan = distancia/7*673;
+        var precioCamion = distancia/6*673;
+        $('#precioMotocicleta').text(precioMotocicleta);
+        $('#precioAutomovil').text(precioAutomovil);
+        $('#precioMinivan').text(precioMinivan);
+        $('#precioCamion').text(precioCamion);
     });
-
+    
     
 }
