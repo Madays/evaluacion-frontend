@@ -2,59 +2,55 @@ function get_regiones(){
 	return [
 		{
 			name: "arica",
-			distance: 0
+			distance: 2059
 		},
 		{
 			name: "iquique",
-			distance: 0
+			distance: 1789
 		},
 		{
 			name: "antofagasta",
-			distance: 0
-		},
-		{
-			name: "copiapo",
-			distance: 0
+			distance: 1368
 		},
 		{
 			name: "la_serena",
-			distance: 0
+			distance: 470
 		},
 		{
 			name: "valparaiso",
-			distance: 0
+			distance: 116
 		},
 		{
 			name: "rancagua",
-			distance: 0
+			distance: 84
 		},
 		{
 			name: "talca",
-			distance: 0
+			distance: 257
 		},
 		{
 			name: "concepcion",
-			distance: 0
+			distance: 500
 		},
 		{
 			name: "temuco",
-			distance: 0
+			distance: 690
 		},
 		{
 			name: "valdivia",
-			distance: 0
+			distance: 848
 		},
 		{
 			name: "puerto_montt",
-			distance: 0
+			distance: 1032
 		},
 		{
 			name: "coyhaique",
-			distance: 0
+			distance: 1888
 		},
 		{
 			name: "punta_arenas",
-			distance: 0
+			distance: 3004
 		},
 		{
 			name: "santiago",

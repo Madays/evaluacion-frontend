@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   height: 100vh;
-  /*background-color: purple;*/ }
+  /*background-color: red;*/ }
   body div#nav-menu {
     background-color: #fff;
     border-color: #fff; }
@@ -41,5 +41,26 @@ body {
       background: #FFC471;
       color: #fff;
       border-style: none; }
+  body section#calculator * {
+    /*outline: 1px solid purple; */ }
+  body section#calculator div#vehiculo {
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px; }
+    body section#calculator div#vehiculo h4 {
+      margin: 0; }
+    body section#calculator div#vehiculo span {
+      padding-bottom: 10px; }
+    body section#calculator div#vehiculo table {
+      display: inline; }
+      body section#calculator div#vehiculo table tr td {
+        padding: 5px 10px;
+        text-align: left; }
+      body section#calculator div#vehiculo table #precio {
+        color: #FFC471; }
+    body section#calculator div#vehiculo p {
+      padding-top: 20px; }
+      body section#calculator div#vehiculo p input {
+        border: solid 1px #FFC471; }
 
 /*# sourceMappingURL=style.css.map */

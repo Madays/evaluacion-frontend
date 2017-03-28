@@ -13,7 +13,7 @@ body{
     background-repeat: no-repeat;    
     background-attachment:scroll; 
     height: 100vh; 
-    /*background-color: purple;*/
+    /*background-color: red;*/
     div#nav-menu{  
 
         background-color: #fff;
@@ -55,6 +55,40 @@ body{
                 border-style: none;
             }    
         }
+    }
+    section#calculator *{
+        /*outline: 1px solid purple; */   
+    }
+    section#calculator{ 
+        div#vehiculo{
+            background-color: $blanco;
+            display: inline-block;
+            padding: 20px;
+            h4{
+                margin: 0;
+            }
+            span{
+                padding-bottom: 10px;
+            }
+            table{
+                display: inline;
+                tr{
+                    td{
+                        padding: 5px 10px;
+                        text-align: left;
+                    }                    
+                }
+                #precio{
+                    color: $segundo-color;
+                }
+            }
+            p{
+                padding-top: 20px;
+                input{
+                    border: solid 1px $segundo-color;
+                }
+            }
+        }           
     }
     
        

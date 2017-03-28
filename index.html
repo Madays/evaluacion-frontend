@@ -10,6 +10,7 @@
 	<!--REQUIRED STYLE SHEETS-->
 	<link rel="stylesheet" href="src/css/style.css">
 	<link rel="stylesheet" href="src/css/queries/queries.css">
+	<script src="src/js/ciudades.js"></script>
 </head>
 <body>
 	<div class="navbar" id="nav-menu">
@@ -58,24 +59,46 @@
 	</section><!--END ABOUT SECTION-->
 	<section id="calculator" >
 		<div class="container">
-            <h4>VEHÍCULO</h4>
-            <h6>seleccione</h6>
-		    <ul>
-		        <li>
-		            <imput type=""></imput>
-		            <img src="" alt="">
-		        </li>
-		        <li></li>
-		        <li></li>
-		        <li></li>
-		    </ul>    
+            <div id="vehiculo">
+                <h4>VEHÍCULO</h4>
+                <span>seleccione</span>
+                <br>
+                <table style="width:100%" class="text-center">
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/moto.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Motocicleta</b> <br><span>máximo 2 pasajeros</span></span></td>
+                    <td id="precio">#333</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/auto.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Automóvil</b> <br><span>máximo 5 pasajeros</span></span></td>
+                    <td id="precio">#333</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/van.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Minivan</b> <br><span>máximo 10 pasajeros</span></span></td>
+                    <td id="precio">#333</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/camion.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Motocicleta</b> <br><span>máximo 3 pasajeros</span></span></td>
+                    <td id="precio">#333</td>
+                  </tr>              
+                </table> 
+                <p><b>Cantidad de pasajeros: </b> <input type="text" size="4"></p>
+            </div>               
 		</div>
 	</section><!--END PROJECT SECTION-->
 	<div id="footer">
 		2014 www.yourdomain.com | All Right Reserved  
 	</div><!-- END FOOTER SECTION -->
 	<script src="src/js/jquery.min.js"></script>
+	
 	<script src="src/js/main.js"></script>
-	<script src="src/js/ciudades.js"></script>
+	<script src="src/js/main2.js"></script>
 </body>
 </html>
