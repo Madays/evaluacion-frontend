@@ -40,16 +40,16 @@
 		<div class="container">
             <div id="seleccionar-ruta">
                 <h4>ORIGEN</h4>
-                <select id="origen">
+                <select id="origen" onchange="mostrarbtnBuscar()">
                   <option value="0">Seleccione</option>                  
                 </select>
                 <h4>DESTINO</h4>
-                <select id="destino">
+                <select id="destino" onchange="mostrarbtnBuscar()">
                   <option value="0">Seleccione</option>                  
                 </select>                   
             </div>	      
-            <p id="btn-buscar">
-                <button>buscar</button>
+            <p >
+                <button id="btn-buscar" class="">buscar</button>
             </p>      	        
 		</div>
 	</div><!--END HOME SECTION-->  
@@ -57,7 +57,7 @@
 		<div class="container">
 		</div>
 	</section><!--END ABOUT SECTION-->
-	<section id="calculator" class="collapse">
+	<section id="calculator" class="">
 		<div class="container">
             <div id="vehiculo">
                 <h4>VEHÍCULO</h4>

@@ -5,16 +5,23 @@ $(document).ready(function(){
     mostrarbtnBuscar();
     precioRuta();
     validadCantidadPasajeros();
-        
+    
+    $('#btn-buscar').hide();
+    $('#calculator').hide();
 });
+
 function mostrarInfo(){
     $('#box-icon').click(function(){
-        $('#info').slideToggle("slow"); 
+        $('#info').show(); 
     });
 }
 
 function mostrarbtnBuscar(){
-    
+    var origenSeleccionado=parseInt($('#origen').val());
+    var destinoSeleccionado=parseInt($('#destino').val());
+    if((origenSeleccionado!==0)&&(destinoSeleccionado!==0)){
+        $('#btn-buscar').slideToggle("slow");    
+    }
 }
 
 function precioRuta(){
