@@ -1,0 +1,42 @@
+/*------------CELULARES-----*/
+@media screen and (max-width: 767px) {
+  body div#nav-menu div#nav-info {
+    font-size: 20px; }
+  body div#home-sec {
+    padding: 20px; }
+    body div#home-sec div#seleccionar-ruta {
+      background-color: #fff;
+      padding: 20px;
+      display: inline-block; } }
+/*------------TABLET-----*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body div#nav-menu div#nav-info {
+    font-size: 2px; }
+  body div#home-sec {
+    padding: 20px; }
+    body div#home-sec div#seleccionar-ruta {
+      background-color: #fff;
+      padding: 20px;
+      display: inline-block; } }
+/*------------DESKTOP-----*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body div#nav-menu div#nav-info {
+    font-size: 2px; }
+  body div#home-sec {
+    padding: 20px; }
+    body div#home-sec div#seleccionar-ruta {
+      background-color: #fff;
+      padding: 20px;
+      display: inline-block; } }
+/*------------DESKTOP LARGE-----*/
+@media screen and (min-width: 1200px) {
+  body div#nav-menu div#nav-info {
+    font-size: 2px; }
+  body div#home-sec {
+    padding: 20px; }
+    body div#home-sec div#seleccionar-ruta {
+      background-color: #fff;
+      padding: 20px;
+      display: inline-block; } }
+
+/*# sourceMappingURL=queries.css.map */

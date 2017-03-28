@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen Herramientas Productividad</title>
+	<link rel="stylesheet icon" href="favicon.ico">
+	<link rel="stylesheet" href="src/css/font-awesome.css">	
+	<link rel="stylesheet" href="src/css/bootstrap.min.css">
+	<!--REQUIRED STYLE SHEETS-->
+	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/queries/queries.css">
+	<script src="src/js/ciudades.js"></script>
+</head>
+<body>
+	<div class="navbar" id="nav-menu">
+		<div class="container">	               
+            <div class="row">
+		        <div class="col-xs-6" id="nav-logo">
+                    <h2>
+                        <img src="src/img/img-docs/logo-gris.jpg" alt="logo-encabezado" class="img-responsive" width="200px">
+                    </h2>
+		            
+		        </div>
+		        <div class="col-xs-6 text-right" id="nav-info">
+                    <div id="box-icon">
+                        <h2>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>                            
+                        </h2>                                                    
+                    </div>
+                    <div id="info" class="collapse">
+                                <h5>carrocomp!</h5>
+                                <p>La nueva forma de moverte en la ciudad. Con <b>carrocomp!</b> puedes compartir tu viaje con amigos y cobrar el costo aquitativamente.</p>
+                    </div>		                
+		        </div>
+            </div>	    
+		</div>
+	</div><!--END NAV SECTION -->
+	<div id="home-sec">   
+		<div class="container">
+            <div id="seleccionar-ruta">
+                <h4>ORIGEN</h4>
+                <select id="origen">
+                  <option value="0">Seleccione</option>                  
+                </select>
+                <h4>DESTINO</h4>
+                <select id="destino">
+                  <option value="0">Seleccione</option>                  
+                </select>                   
+            </div>	      
+            <p id="btn-buscar">
+                <button>buscar</button>
+            </p>      	        
+		</div>
+	</div><!--END HOME SECTION-->  
+	<section id="info"  >
+		<div class="container">
+		</div>
+	</section><!--END ABOUT SECTION-->
+	<section id="calculator" class="collapse">
+		<div class="container">
+            <div id="vehiculo">
+                <h4>VEHÍCULO</h4>
+                <span>seleccione</span>
+                <br>
+                <table style="width:100%" class="text-center">
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/moto.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Motocicleta</b> <br><span>máximo 2 pasajeros</span></span></td>
+                    <td id="precioMotocicleta">#333</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/auto.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Automóvil</b> <br><span>máximo 5 pasajeros</span></span></td>
+                    <td id="precioAutomovil">#333</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/van.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Minivan</b> <br><span>máximo 10 pasajeros</span></span></td>
+                    <td id="precioMinivan">#333</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="medio-transporte"></td>
+                    <td><img src="src/img/img-docs/camion.jpg" alt="moto" width="30px"></td>
+                    <td><span><b>Camión</b> <br><span>máximo 3 pasajeros</span></span></td>
+                    <td id="precioCamion">#333</td>
+                  </tr>              
+                </table> 
+                <p><b>Cantidad de pasajeros: </b> <input type="text" size="4" id="cant-pasajeros"></p>
+            </div>               
+		</div>
+	</section><!--END PROJECT SECTION-->
+	<div id="footer">
+
+            <p>2014 www.yourdomain.com | All Right Reserved </p>
+	    
+		 
+	</div><!-- END FOOTER SECTION -->
+	<script src="src/js/jquery.min.js"></script>
+	
+	<script src="src/js/main.js"></script>
+	<script src="src/js/main2.js"></script>
+</body>
+</html>
