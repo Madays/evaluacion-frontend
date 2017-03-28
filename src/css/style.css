@@ -5,11 +5,17 @@
   /*outline: 1px solid purple;*/ }
 
 body {
-  /*background-image: url(../img/img-docs/background.jpg);
-  background-size:cover;
+  background-image: url(../img/img-docs/background.jpg);
+  background-size: cover;
   background-position: top center;
-  background-repeat: no-repeat;    
-  background-attachment:scroll; 
-  height: 100vh;  */ }
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100vh; }
+  body .navbar-inverse {
+    background-color: #fff;
+    border-color: #fff; }
+  body div#home-sec {
+    position: fixed;
+    top: 60px; }
 
 /*# sourceMappingURL=style.css.map */

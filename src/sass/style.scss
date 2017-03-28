@@ -7,10 +7,29 @@
 @import "variables/variables";
 @import "mixin/mixin";
 body{
-    /*background-image: url(../img/img-docs/background.jpg);
+    background-image: url(../img/img-docs/background.jpg);
     background-size:cover;
     background-position: top center;
     background-repeat: no-repeat;    
     background-attachment:scroll; 
-    height: 100vh;  */  
+    height: 100vh; 
+    .navbar-inverse {
+        background-color: #fff;
+        border-color: #fff;
+    } 
+    div#nav-meu{        
+        div#nav-logo{
+            
+        }
+        div#nav-info{
+            
+        }
+    }
+    div#home-sec{
+        position: fixed;
+        top: 60px;
+        
+    }
+    
+       
 }
