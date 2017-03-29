@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 function mostrarInfo(){
     $('#box-icon').click(function(){
-        $('#info').show(); 
+        $('#info').slideToggle("slow"); 
     });
 }
 
@@ -46,15 +46,13 @@ function precioRuta(){
     });        
 }
 function validadCantidadPasajeros(){        
-    $('#cant-pasajeros').keyup(function(){
-        alert('5678');
-        var regex = /([0-9]+)/;//expresion de numeros del 1 al 9
-        var numPasajero=parseInt($('#cant-pasajeros').val());
-        if(numPasajero!==regex){
-            alert('df');
-        }   
-    });
-    
+
+        /*var regex = /([0-9]+)/;//expresion de numeros del 1 al 9
+        var numPasajero=parseInt($('#cant-pasajeros').val());        
+        if(isNaN(numPasajero)){
+            console.log(numPasajero);
+            alert('Ingrese un numero');
+        }*/   
     
 }
 
