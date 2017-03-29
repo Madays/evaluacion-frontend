@@ -52,6 +52,10 @@ gulp.task('pocy-js-to-dist',function(){
     return gulp.src('./src/js/*.js')
     .pipe(gulp.dest('./dist/js'));
 });
+gulp.task('pocy-index-to-src',function(){
+    return gulp.src('./index.html')
+    .pipe(gulp.dest('./src'));
+});
 gulp.task('pocy-index-to-dist',function(){
     return gulp.src('./index.html')
     .pipe(gulp.dest('./dist'));
@@ -74,4 +78,4 @@ gulp.task('pocy-img-to-dist',function(){
 });
 
 
-gulp.task('default', ['fontawesome-css','fontawesome','images', 'style', 'script-bootstrap','script-jquery','pocy-css-style-to-dist','pocy-css-queries-to-dist','pocy-js-to-dist','pocy-index-to-dist','pocy-package-to-dist','pocy-gulpfile-to-dist','pocy-gitignore-to-dist','pocy-img-to-dist']);
+gulp.task('default', ['fontawesome-css','fontawesome','images', 'style', 'script-bootstrap','script-jquery','pocy-css-style-to-dist','pocy-css-queries-to-dist','pocy-js-to-dist','pocy-index-to-dist','pocy-package-to-dist','pocy-gulpfile-to-dist','pocy-gitignore-to-dist','pocy-img-to-dist','pocy-index-to-src']);
