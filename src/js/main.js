@@ -6,7 +6,8 @@ $(document).ready(function(){
     mostrarbtnBuscar();
     precioRuta();
     validadCantidadPasajeros(); 
-    elegirVehiculo();
+    mostrarCompartirVehiculo();
+    mostrarPrecioUnitario();
     
     $('#btn-buscar').hide();
     $('#calculator').hide();
@@ -36,19 +37,7 @@ function showPosition(position) {
         position: {lat: myLatLng.lat, lng: myLatLng.lon},
         title: 'Hello World!',
         /*icon:"car.png"*/
-    });
-    
-    var myLatLng1 = [
-      {lat: -12.1511485, lng: -70.531948},{lat: -15.4521485, lng: -73.532948},{lat: -15.4521485, lng: -71.532948}];
-    //{lat: -15.4521485, lng: -71.532948},{lat: -16.4531485, lng: -74.533948},{lat: -15.4541485, lng: -73.534948},{lat: -16.4571485, lng: -71.532948}
-    for(var i=0;i<=myLatLng1.length;i++){
-        var marker1 = new google.maps.Marker({
-          map: map,
-          position: myLatLng1[i],            
-          title: 'Hello World!',
-          /*icon:"../img/car.png"*/
-        });    
-    }    
+    });        
 }
 function mostrarInfo(){
     $('#box-icon').click(function(){
@@ -95,11 +84,18 @@ function validadCantidadPasajeros(){
         }*/   
     
 }
-var vehiculo=false;
-function elegirVehiculo(){
-    $('input[type=radio]').change(function() {             return vehiculo=true;
-        console.log(vehiculo);                                      
+
+function mostrarCompartirVehiculo(){
+    $("#cant-pasajeros").change(function () {
+        if(parseInt($('#cant-pasajeros').val())>0){
+            $('#compartir-carro').show();
+    }    
     });
     
 }
-
+function mostrarPrecioUnitario(){
+    $('#mostrarPU').on('click',function(){
+        console.log($('#camion').val());
+        alert('df')    ;
+    });
+}
