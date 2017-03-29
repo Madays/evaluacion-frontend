@@ -96,6 +96,19 @@ function mostrarCompartirVehiculo(){
 function mostrarPrecioUnitario(){
     $('#mostrarPU').on('click',function(){
         console.log($('#camion').val());
-        alert('df')    ;
+        if($('#camion').val()=="camion"){
+            
+            var distancia = parseInt($('#origen').val()) + parseInt($('#destino').val());
+        var precioMotocicleta = distancia/21*673;
+        var precioAutomovil = distancia/12*673;
+        var precioMinivan = distancia/7*673;
+        var precioCamion = distancia/6*673;
+            
+            var precioUnitario = precioMotocicleta/2;
+            alert(precioUnitario);
+        }
     });
+}
+function precioUnitario(){
+    mostrarPrecioUnitario();
 }
