@@ -7,22 +7,23 @@
 @import "variables/variables";
 @import "mixin/mixin";
 body{
-    background-image: url(../img/img-docs/background.jpg);
+    /*background-image: url(../img/img-docs/background.jpg);
     background-size:cover;
     background-position: top center;
     background-repeat: no-repeat;    
     background-attachment:scroll; 
-    height: 100vh; 
+    height: 100vh; */
     /*background-color: red;*/
+    
     div#nav-menu{  
-
         background-color: #fff;
         border-color: #fff;
         div#nav-logo{
             
         }
         div#nav-info{
-            color: #FFC471;                         cursor: pointer;
+            color: #FFC471;             
+            cursor: pointer;
             #info{
                 position: absolute;
                 right: 0;
@@ -35,6 +36,14 @@ body{
                 }
             }
         }
+    }
+    div#map{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -100;
     }
     div#home-sec{
         div#seleccionar-ruta{
@@ -54,6 +63,9 @@ body{
                 border-style: none;
             }    
         }
+    }
+    section#calculator *{
+        outline: 1px solid purple;    
     }
     section#calculator{ 
         div#vehiculo{
@@ -84,11 +96,19 @@ body{
                     border: solid 1px $segundo-color;
                 }
             }
-        }           
+        }
+        p{
+            button{
+                margin-top: 10px;
+                padding: 5px 120px;
+                background: $segundo-color;
+                color: $blanco;
+                border-style: none;
+            }    
+        }
+        
     }
     #footer{
   
-    }
-    
-       
+    }   
 }

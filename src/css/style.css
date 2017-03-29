@@ -5,12 +5,12 @@
   /*outline: 1px solid purple;*/ }
 
 body {
-  background-image: url(../img/img-docs/background.jpg);
-  background-size: cover;
+  /*background-image: url(../img/img-docs/background.jpg);
+  background-size:cover;
   background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 100vh;
+  background-repeat: no-repeat;    
+  background-attachment:scroll; 
+  height: 100vh; */
   /*background-color: red;*/ }
   body div#nav-menu {
     background-color: #fff;
@@ -27,6 +27,13 @@ body {
           color: #333;
           font-size: 12px;
           width: 200px; }
+  body div#map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -100; }
   body div#home-sec div#seleccionar-ruta {
     background-color: #fff;
     padding: 20px;
@@ -39,6 +46,8 @@ body {
     background: #FFC471;
     color: #fff;
     border-style: none; }
+  body section#calculator * {
+    outline: 1px solid purple; }
   body section#calculator div#vehiculo {
     background-color: #fff;
     display: inline-block;
@@ -58,5 +67,11 @@ body {
       padding-top: 20px; }
       body section#calculator div#vehiculo p input {
         border: solid 1px #FFC471; }
+  body section#calculator p button {
+    margin-top: 10px;
+    padding: 5px 120px;
+    background: #FFC471;
+    color: #fff;
+    border-style: none; }
 
 /*# sourceMappingURL=style.css.map */
