@@ -46,8 +46,6 @@ body {
     background: #FFC471;
     color: #fff;
     border-style: none; }
-  body section#calculator * {
-    outline: 1px solid purple; }
   body section#calculator div#vehiculo {
     background-color: #fff;
     display: inline-block;

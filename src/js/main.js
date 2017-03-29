@@ -1,13 +1,12 @@
 $(document).ready(function(){
     initMap();
     mostrarInfo();
-    mostrarbtnBuscar();
     dibujarOpcionesCiudad();
     mostrarbtnBuscar();
-    precioRuta();
+    mostrarVehiculoPrecios();
     validadCantidadPasajeros(); 
     mostrarCompartirVehiculo();
-    mostrarPrecioUnitario();
+    carcularPrecioUnitario();
     
     $('#btn-buscar').hide();
     $('#calculator').hide();
@@ -44,17 +43,22 @@ function mostrarInfo(){
         $('#info').slideToggle("slow"); 
     });
 }
-
+function dibujarOpcionesCiudad(){
+            var ciudades = get_regiones();
+            for(var i=0;i<=13;i++){
+                $('#origen').append('<option value='+ciudades[i].distance+'>'+ciudades[i].name+'</option>');
+                $('#destino').append('<option value='+ciudades[i].distance+'>'+ciudades[i].name+'</option>');
+            }
+        }
 function mostrarbtnBuscar(){
     var origenSeleccionado=parseInt($('#origen').val());
     var destinoSeleccionado=parseInt($('#destino').val());
     if((origenSeleccionado!==0)&&(destinoSeleccionado!==0)){
-        $('#btn-buscar').slideToggle("slow");    
+        $('#btn-buscar').show();    
     }
 }
 
-function precioRuta(){
-    var ciudades = get_regiones();
+function mostrarVehiculoPrecios(){
     var consumoLkm = {
         auto: 12,
         moto: 21,
@@ -62,7 +66,8 @@ function precioRuta(){
         camion: 6
     }
     $('#btn-buscar').click(function(){
-        $('#calculator').slideToggle("slow"); 
+        /*$('#calculator').slideToggle("slow");*/ 
+        $('#calculator').show(); 
         var distancia = parseInt($('#origen').val()) + parseInt($('#destino').val());
         var precioMotocicleta = distancia/21*673;
         var precioAutomovil = distancia/12*673;
@@ -93,22 +98,30 @@ function mostrarCompartirVehiculo(){
     });
     
 }
-function mostrarPrecioUnitario(){
-    $('#mostrarPU').on('click',function(){
-        console.log($('#camion').val());
-        if($('#camion').val()=="camion"){
-            
-            var distancia = parseInt($('#origen').val()) + parseInt($('#destino').val());
-        var precioMotocicleta = distancia/21*673;
-        var precioAutomovil = distancia/12*673;
-        var precioMinivan = distancia/7*673;
-        var precioCamion = distancia/6*673;
-            
-            var precioUnitario = precioMotocicleta/2;
-            alert(precioUnitario);
-        }
+
+function carcularPrecioUnitario(){
+    /*
+        PU = PrecioRuta/numPasajeros
+        PrecioRuta = distancia*673/consumoLitrosVehiculo
+    */
+    alert('56789');
+    var distancia = parseInt($('#origen').val()) + parseInt($('#destino').val());
+    var numPasajeros = parseInt($('#cant-pasajeros').val());
+    var precioMotocicleta = distancia/21*673;
+    var precioAutomovil = distancia/12*673;
+    var precioMinivan = distancia/7*673;
+    var precioCamion = distancia/6*673;
+    
+    var motocicletaPU = precioMotocicleta/numPasajeros;
+    var automovilPU = precioAutomovil/numPasajeros;
+     
+    $('#motocicleta').click(function(){
+        console.log(parseInt($('#precioMotocicleta').text()));
+        parseInt($('#precioMotocicleta').text());
     });
+
 }
-function precioUnitario(){
-    mostrarPrecioUnitario();
-}
+$('#mostrarPU').click(function(){
+    alert('tghj');
+    carcularPrecioUnitario();
+});
