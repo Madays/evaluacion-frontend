@@ -14,7 +14,7 @@ body{
     background-attachment:scroll; 
     height: 100vh; */
     /*background-color: red;*/
-    
+    background-color: red;
     div#nav-menu{  
         background-color: #fff;
         border-color: #fff;
@@ -66,6 +66,8 @@ body{
     }
     section#calculator{ 
         div#vehiculo{
+            //position: relative;
+            z-index: 10;
             background-color: $blanco;
             display: inline-block;
             padding: 20px;
@@ -106,6 +108,15 @@ body{
         
     }
     #footer{
-  
+        *{
+            outline: solid 1px purple;
+        }
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        p{
+        
+        }
     }   
 }
