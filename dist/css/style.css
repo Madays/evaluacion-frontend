@@ -11,7 +11,8 @@ body {
   background-repeat: no-repeat;    
   background-attachment:scroll; 
   height: 100vh; */
-  /*background-color: red;*/ }
+  /*background-color: red;*/
+  background-color: red; }
   body div#nav-menu {
     background-color: #fff;
     border-color: #fff; }
@@ -47,6 +48,7 @@ body {
     color: #fff;
     border-style: none; }
   body section#calculator div#vehiculo {
+    z-index: 10;
     background-color: #fff;
     display: inline-block;
     padding: 20px; }
@@ -71,5 +73,12 @@ body {
     background: #FFC471;
     color: #fff;
     border-style: none; }
+  body #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    body #footer * {
+      outline: solid 1px purple; }
 
 /*# sourceMappingURL=style.css.map */

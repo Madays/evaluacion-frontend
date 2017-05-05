@@ -7,6 +7,15 @@ var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 
+gulp.task('sass', function () {
+  return gulp.src('./src/sass/**/*.scss')
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(gulp.dest('./src/css'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('./src/sass/**/*.scss', ['sass']);
+});
 
 gulp.task('script-bootstrap', function(cb){
 	// tarea script
@@ -78,4 +87,4 @@ gulp.task('pocy-img-to-dist',function(){
 });
 
 
-gulp.task('default', ['fontawesome-css','fontawesome','images', 'style', 'script-bootstrap','script-jquery','pocy-css-style-to-dist','pocy-css-queries-to-dist','pocy-js-to-dist','pocy-index-to-dist','pocy-package-to-dist','pocy-gulpfile-to-dist','pocy-gitignore-to-dist','pocy-img-to-dist','pocy-index-to-src']);
+gulp.task('default', ['fontawesome-css','fontawesome','images', 'style', 'script-bootstrap','script-jquery','pocy-css-style-to-dist','pocy-css-queries-to-dist','pocy-js-to-dist','pocy-index-to-dist','pocy-package-to-dist','pocy-gulpfile-to-dist','pocy-gitignore-to-dist','pocy-img-to-dist','pocy-index-to-src','sass','sass:watch']);

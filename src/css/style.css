@@ -6,13 +6,12 @@
 
 body {
   /*background-image: url(../img/img-docs/background.jpg);
-  background-size:cover;
-  background-position: top center;
-  background-repeat: no-repeat;    
-  background-attachment:scroll; 
-  height: 100vh; */
-  /*background-color: red;*/
-  background-color: red; }
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;    
+    background-attachment:scroll; 
+    height: 100vh; */
+  /*background-color: red;*/ }
   body div#nav-menu {
     background-color: #fff;
     border-color: #fff; }
@@ -80,5 +79,3 @@ body {
     right: 0; }
     body #footer * {
       outline: solid 1px purple; }
-
-/*# sourceMappingURL=style.css.map */

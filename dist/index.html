@@ -10,6 +10,7 @@
 	<!--REQUIRED STYLE SHEETS-->
 	<link rel="stylesheet" href="src/css/style.css">
 	<link rel="stylesheet" href="src/css/queries/queries.css">
+	<link rel="stylesheet" type="text/css" href="src/css/sweetalert.css">
 	<script src="src/js/ciudades.js"></script>
 </head>
 <body>
@@ -36,7 +37,7 @@
             </div>	    
 		</div>
 	</div><!--END NAV SECTION -->
-	<div id="map" style='height:100vh'></div>
+	<div id="map" style='height:180vh'></div>
 	<div id="home-sec">   
 		<div class="container">
             <div id="seleccionar-ruta">
@@ -91,7 +92,7 @@
                     <td id="precioCamion">#333</td>
                   </tr>              
                 </table> 
-                <p><b>Cantidad de pasajeros: </b> <input type="text" size="4" id="cant-pasajeros" onkeydown="validadCantidadPasajeros()"></p>
+                <p><b>Cantidad de pasajeros: </b> <input type="number" size="4" id="cant-pasajeros"></p>
             </div>  
             <p id="mostrarPU"><button id="compartir-carro">compartir carro!</button></p>                         
 		</div>    
@@ -99,15 +100,16 @@
 	</section><!--END PROJECT SECTION-->	
 	<div id="footer">
 
-            <p>2014 www.yourdomain.com | All Right Reserved </p>
+            <!--<p class="text-center">2014 www.yourdomain.com | All Right Reserved </p>-->
 	    
 		 
 	</div><!-- END FOOTER SECTION -->
 	
 	<script src="src/js/jquery.min.js"></script>
-	
-	<script src="src/js/main.js"></script>
+	<script src="src/js/sweetalert.min.js"></script>		
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPhRJfmJk39RODSk-cxJEIEvfg6fjAulw&callback=initMap"
         async defer></script>
+    <script src="src/js/main.js"></script>    
+    <script src="src/js/scroll.js"></script>    
 </body>
 </html>
